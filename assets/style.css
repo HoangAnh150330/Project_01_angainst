@@ -473,3 +473,110 @@ a {
   height: 440px;
   flex-shrink: 0;
 }
+/* ===========Blogs====== */
+.Blogs {
+  margin-top: 135px;
+  padding: 96px 0px;
+  background: #fffcf4;
+}
+.Blogs .blog-top {
+  text-align: center;
+}
+.Blogs .blog-top .desc {
+  margin: 16px auto 0;
+  width: 448px;
+  color: #696262;
+  font-size: 1.6rem;
+  line-height: 1.75; /* 175% */
+}
+.Blogs .blog-list {
+  display: flex;
+  margin-top: 55px;
+  gap: 30px;
+  overflow: hidden;
+}
+.Blogs .item {
+  flex-shrink: 0;
+  width: calc(33.33% - 20px);
+  border-radius: 16px;
+  background-color: #fff;
+  transition: all ease 0.5s;
+  transform: translateX(-100%);
+}
+
+.Blogs .item .thumb {
+  height: 250px;
+  width: 100%;
+  border-radius: 16px 16px 0px 0px;
+  background-color: #fff;
+  object-fit: cover;
+}
+.Blogs .item .info {
+  padding: 20px 20px 28px;
+}
+
+.Blogs .date {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding-bottom: 12px;
+  color: #5f5b53;
+  font-size: 1.4rem;
+  line-height: 1.86; /* 185.714% */
+}
+.Blogs .item .date::before {
+  content: "";
+  margin-right: 4px;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+.Blogs .item .date::after {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  content: "";
+  display: inline-block;
+  right: -27px;
+  width: 160px;
+  height: 1px;
+  border-radius: 0.5px;
+  background: #e2dfda;
+}
+.Blogs .item .title {
+  margin-top: 12px;
+  color: #171100;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75; /* 175% */
+}
+.Blogs .item .btn {
+  margin-top: 12px;
+  font-size: 1.4rem;
+}
+.Blogs .item .btn:hover {
+  background-color: var(--primary-color);
+}
+.Blogs .item:hover {
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+
+.Blogs .dots {
+  justify-content: center;
+  display: flex;
+  gap: 6px;
+}
+.Blogs .dot {
+  margin-top: 38px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #5f5b53;
+  cursor: pointer;
+}
+.Blogs .dot.active {
+  background: var(--primary-color);
+  cursor: default;
+}
